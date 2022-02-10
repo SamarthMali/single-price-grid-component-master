@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(218deg 22% 67% / 40%);
+    font-weight: 400;
+    margin: 8% auto;
+}
+
+/* .container{
+height: 100%;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: 370px 370px;
+    justify-content: center;
+    border-radius: 15px;
+}
+    
+
+
+
+.heading{
+    grid-column: span 2;
+    background-color: white;
+    padding: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.heading h4{
+    color: hsl(179, 62%, 43%);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.heading h5{
+    color: hsl(71, 73%, 54%);
+    font-size: 20px;        
+}
+
+.heading p{
+    color: hsl(218, 22%, 67%);
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+
+
+
+
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    padding: 50px;
+    border-bottom-left-radius: 10px;
+}
+
+.subscription h4{
+    font-size: 22px;    
+    margin-bottom: 15px;
+}
+
+.subscription h5{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.subscription span{
+    color: hsl(204deg 43% 93% / 64%);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.subscription p{
+    margin-bottom: 30px;
+}
+
+a{
+        border-radius: 13px;
+        text-align: center;
+
+        background-color: hsl(71, 73%, 54%);
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        font-weight: 400;
+        color: hsl(204deg 43% 93%);
+        box-shadow: 2px 6px 20px -5px hsl(0deg 0% 0% / 32%);
+}
+
+
+.why-us{
+    background-color: hsl(179, 47%, 52%);
+    color: hsl(204, 43%, 93%);
+    padding: 50px;
+    border-bottom-right-radius: 10px;
+}
+
+.why-us h5{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+li{
+    list-style: none;
+    color: hsl(204deg 43% 93% / 64%);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+@media (max-width:777px) {
+
+    .container{
+        grid-template-columns: 370px;
+    }
+    .heading{
+       grid-column: span 1;
+    }
+    .why-us{
+        border-bottom-left-radius: 10px;
+    }
+    .subscription{
+        border-bottom-left-radius: 0px;
+    }
+}
+
+@media (max-width:376px){
+    .container {
+        grid-template-columns: 350px;
+    }
+}
